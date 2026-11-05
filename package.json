@@ -1,17 +1,33 @@
 {
-  "name": "models",
-  "version": "1.0.0",
-  "description": "",
-  "main": "Producto.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "tienda-hardware-api",
+  "version": "2.0.0",
+  "description": "API serverless de catálogo de hardware con MongoDB, Mongoose y Vercel",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.19.0"
   },
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "seed": "node scripts/seed.js",
+    "seed:reset": "node scripts/seed.js --reset",
+    "db:indexes": "node scripts/ensure-indexes.js",
+    "consultas": "node scripts/consultas.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
+  },
+  "keywords": [
+    "api",
+    "mongodb",
+    "mongoose",
+    "serverless",
+    "vercel",
+    "hardware"
+  ],
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "dotenv": "^18.0.9",
     "mongoose": "^9.11.4"
   }
 }

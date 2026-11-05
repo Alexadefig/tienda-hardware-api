@@ -1,4 +1,15 @@
+# Entorno
 .env
+.env.local
+.env.*.local
+
+# Dependencias
 node_modules
+
+# Vercel
 .vercel
 
+# Logs y basura del sistema
+*.log
+.DS_Store
+coverage
